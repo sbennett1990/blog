@@ -11,10 +11,26 @@ and NAT-gateway to the world, with future plans to move to PCEngine's APU. Once
 I get the APU, I will probably keep the ERL around as an NSD server to the
 local LAN.
 
-There are already a few articles with installation instructions for various
-operating systems, certainly enough to get you going. Here are my steps:
+### Installing OpenBSD on EdgeRouter Lite
 
-### Installation Steps
+#### Related Posts
+
+There are already a few articles with installation instructions for various
+operating systems, certainly enough to get you going.
+
+ * http://www.tedunangst.com/flak/post/OpenBSD-on-ERL
+ * http://www.daemonology.net/blog/2016-01-10-FreeBSD-EdgeRouter-Lite.html
+ * http://rtfm.net/FreeBSD/ERL/
+ * https://wiki.gentoo.org/wiki/MIPS/ERLite-3
+
+#### Required
+
+ * EgdeRouter Lite
+ * Low profile USB flash drive
+ * Small Phillps screwdriver
+ * Another system with DHCP, tftpd, and a Serial port
+
+#### Steps
 
 1. Set up a DHCP and tftpd server
 
@@ -26,7 +42,7 @@ second computer (preferrably running OpenBSD).
 
 3. Replace the internal USB drive
 
-The stock inernal storage is very small (4GB) and fairly cheap quality. Replace
+The stock internal storage is very small (4GB) and fairly cheap quality. Replace
 with something larger. The USB drive must be very low profile to fit in the
 case! I used a [32GB SanDisk Cruzer Fit](https://www.amazon.com/dp/B00812F7O8/).
 

@@ -29,6 +29,7 @@ operating systems, certainly enough to get you going.
  * Low profile USB flash drive
  * Small Phillps screwdriver
  * Another system with DHCP, tftpd, and a Serial port
+ * Serial cable ([like this one][serial_amazon])
 
 #### Steps
 
@@ -56,4 +57,5 @@ On OpenBSD, the command would be (as root):
 
 
 
-[erl_amazon]:	https://www.amazon.com/Ubiquiti-Edgerouter-ERLITE-3-Desktop-Router/dp/B00HXT8EKE/
+[erl_amazon]:		https://www.amazon.com/Ubiquiti-Edgerouter-ERLITE-3-Desktop-Router/dp/B00HXT8EKE/
+[serial_amazon]:	https://www.amazon.com/Generic-7-Cisco-Console-RJ45-to-DB9/dp/B000GL3MOY/

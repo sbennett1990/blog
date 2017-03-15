@@ -8,7 +8,7 @@ everything up and running and an information dump. Your mileage may vary.
 
 My main router is in charge of serveral tasks:
 
- * [pf(4)](http://man.openbsd.org/pf) NAT gateway (also [here](obsd_pf_guide))
+ * [pf(4)](http://man.openbsd.org/pf) NAT gateway ([see also](obsd_pf_guide))
  * Primary DHCP server
  * Primary DNS server ([unbound(8)](http://man.openbsd.org/unbound)) combined
    with [DNSCrypt](https://dnscrypt.org/)

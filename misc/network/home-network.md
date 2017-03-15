@@ -6,10 +6,10 @@ everything up and running and an information dump. Your mileage may vary.
 
 ## Router
 
-I currently use an Ubiquiti EgdeRouter Lite (ERL) as the firewall and
-NAT-gateway to the world, with future plans to move to PCEngine's APU. Once I
-get the APU, I will probably keep the ERL around as an NSD server to the local
-LAN.
+I currently use an [Ubiquiti EgdeRouter Lite][erl_amazon] (ERL) as the firewall
+and NAT-gateway to the world, with future plans to move to PCEngine's APU. Once
+I get the APU, I will probably keep the ERL around as an NSD server to the
+local LAN.
 
 There are already a few articles with installation instructions for various
 operating systems, certainly enough to get you going. Here are my steps:
@@ -22,7 +22,7 @@ The ERL will have to boot the install image over the network, which means it
 will need DHCP and an accessible tftpd server. In other words, you need a
 second computer (preferrably running OpenBSD).
 
-2. Put the octeon *bsd.rd* file in */tftproot*
+2. Put the octeon `bsd.rd` file in `/tftproot`
 
 3. Replace the internal USB drive
 
@@ -37,3 +37,7 @@ On OpenBSD, the command would be (as root):
 ```
 # cu -l /dev/cuaU0 -s 115200
 ```
+
+
+
+[erl_amazon]:	https://www.amazon.com/Ubiquiti-Edgerouter-ERLITE-3-Desktop-Router/dp/B00HXT8EKE/

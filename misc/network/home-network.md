@@ -28,7 +28,7 @@ second computer (preferrably running OpenBSD).
 
 The stock inernal storage is very small (4GB) and fairly cheap quality. Replace
 with something larger. The USB drive must be very low profile to fit in the
-case! I used a (32GB SanDisk Cruzer Fit)[https://www.amazon.com/dp/B00812F7O8/].
+case! I used a [32GB SanDisk Cruzer Fit](https://www.amazon.com/dp/B00812F7O8/).
 
 4. Connect to the ERL over the serial port
 

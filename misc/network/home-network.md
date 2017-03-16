@@ -8,7 +8,8 @@ everything up and running and an information dump. Your mileage may vary.
 
 My main router is in charge of serveral tasks:
 
- * [pf(4)](http://man.openbsd.org/pf) NAT gateway ([see also](obsd_pf_guide))
+ * [pf(4)](http://man.openbsd.org/pf) NAT gateway ([see also]
+   (https://www.openbsd.org/faq/pf/example1.html#pf))
  * Primary DHCP server
  * Primary DNS server ([unbound(8)](http://man.openbsd.org/unbound)) combined
    with [DNSCrypt](https://dnscrypt.org/)
@@ -67,4 +68,3 @@ On OpenBSD, the command would be (as root):
 
 [erl_amazon]:		https://www.amazon.com/Ubiquiti-Edgerouter-ERLITE-3-Desktop-Router/dp/B00HXT8EKE/
 [serial_amazon]:	https://www.amazon.com/Generic-7-Cisco-Console-RJ45-to-DB9/dp/B000GL3MOY/
-[obsd_pf_guide]:	https://www.openbsd.org/faq/pf/example1.html#pf

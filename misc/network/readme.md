@@ -6,4 +6,5 @@ everything up and running and an information dump. Your mileage may vary.
 
 ## Topics
 
+ * [Network Services](topics/network-services.md)
  * [OpenBSD on EdgeRouter Lite](topics/obsd-erl.md)

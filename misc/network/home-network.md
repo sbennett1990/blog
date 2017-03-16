@@ -16,9 +16,9 @@ My main router is in charge of serveral tasks:
  * VPN server for my cell phone
 
 I currently use an [Ubiquiti EgdeRouter Lite][erl_amazon] (ERL) as the firewall
-and NAT-gateway to the world, with future plans to move to PCEngine's APU. Once
-I get the APU, I will probably keep the ERL around as an NSD server to the
-local LAN.
+and NAT gateway to the world, with future plans to move to a PC Engines
+(APU)[pce_apu]. Once I get the APU, I will probably keep the ERL around as an
+NSD server to the local LAN.
 
 ### Installing OpenBSD on EdgeRouter Lite
 
@@ -68,3 +68,4 @@ On OpenBSD, the command would be (as root):
 
 [erl_amazon]:		https://www.amazon.com/Ubiquiti-Edgerouter-ERLITE-3-Desktop-Router/dp/B00HXT8EKE/
 [serial_amazon]:	https://www.amazon.com/Generic-7-Cisco-Console-RJ45-to-DB9/dp/B000GL3MOY/
+[pce_apu]:		http://www.pcengines.ch/apu2.htm/

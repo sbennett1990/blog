@@ -8,4 +8,5 @@ everything up and running and an information dump. Your mileage may vary.
 
  * [Network Services Delegations](topics/network-services.md)
  * [Unbound and DNSCrypt](topics/dns-setup.md)
+ * [Resolving Local Hostnames with NSD](topics/nsd.md)
  * [OpenBSD on EdgeRouter Lite](topics/obsd-erl.md)

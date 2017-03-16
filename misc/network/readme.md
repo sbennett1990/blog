@@ -10,3 +10,4 @@ everything up and running and an information dump. Your mileage may vary.
  * [Unbound and DNSCrypt](topics/dns-setup.md)
  * [Resolving Local Hostnames with NSD](topics/nsd.md)
  * [OpenBSD on EdgeRouter Lite](topics/obsd-erl.md)
+ * [OpenBSD on APU2](topics/obsd-apu2.md)

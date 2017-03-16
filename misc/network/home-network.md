@@ -17,7 +17,7 @@ My main router is in charge of serveral tasks:
 
 I currently use an [Ubiquiti EgdeRouter Lite][erl_amazon] (ERL) as the firewall
 and NAT gateway to the world, with future plans to move to a PC Engines
-(APU)[pce_apu]. Once I get the APU, I will probably keep the ERL around as an
+[APU][pce_apu]. Once I get the APU, I will probably keep the ERL around as an
 NSD server to the local LAN.
 
 ### Installing OpenBSD on EdgeRouter Lite

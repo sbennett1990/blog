@@ -1,5 +1,6 @@
 # OpenBSD on the APU2
 
-XXX: stub
+### References
 
-Will be used for information on how to get OpenBSD running on the APU2 board by PC Engines.
+ * https://github.com/elad/openbsd-apu2
+ * http://marc.info/?t=148408671300004&r=1&w=2

@@ -1,4 +1,4 @@
-# Network Services
+# Network Services Delegations
 
 I currently use an [Ubiquiti EgdeRouter Lite][erl_amazon] (ERL) as the firewall
 and NAT gateway to the world, with future plans to move to a [PC Engines

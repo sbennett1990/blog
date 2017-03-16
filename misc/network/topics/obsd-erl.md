@@ -1,6 +1,9 @@
 # OpenBSD on the EdgeRouter Lite
 
-### Installation
+ - [Fresh Install](#fresh-install)
+ - [Upgrading](#upgrading-openbsd-on-erl)
+
+## Fresh Install
 
 #### Related Posts
 
@@ -43,6 +46,10 @@ On OpenBSD, the command would be (as root):
 ```
 # cu -l /dev/cuaU0 -s 115200
 ```
+
+## Upgrading OpenBSD on ERL
+
+XXX: stub
 
 
 

@@ -10,10 +10,10 @@
 There are already a few articles with installation instructions for various
 operating systems, certainly enough to get you going.
 
- * http://www.tedunangst.com/flak/post/OpenBSD-on-ERL
- * http://www.daemonology.net/blog/2016-01-10-FreeBSD-EdgeRouter-Lite.html
- * http://rtfm.net/FreeBSD/ERL/
- * https://wiki.gentoo.org/wiki/MIPS/ERLite-3
+ * http://www.tedunangst.com/flak/post/OpenBSD-on-ERL ([cached][ted-erl-cached])
+ * http://www.daemonology.net/blog/2016-01-10-FreeBSD-EdgeRouter-Lite.html ([cached][collin-erl-cached])
+ * http://rtfm.net/FreeBSD/ERL/ ([cached][rtfm-erl-cached])
+ * https://wiki.gentoo.org/wiki/MIPS/ERLite-3 ([cached][gentoo-erl-cached])
 
 #### Required
 
@@ -53,5 +53,9 @@ XXX: stub
 
 
 
-[erl_amazon]:		https://www.amazon.com/Ubiquiti-Edgerouter-ERLITE-3-Desktop-Router/dp/B00HXT8EKE/
-[serial_amazon]:	https://www.amazon.com/Generic-7-Cisco-Console-RJ45-to-DB9/dp/B000GL3MOY/
+[erl_amazon]:			https://www.amazon.com/Ubiquiti-Edgerouter-ERLITE-3-Desktop-Router/dp/B00HXT8EKE/
+[serial_amazon]:		https://www.amazon.com/Generic-7-Cisco-Console-RJ45-to-DB9/dp/B000GL3MOY/
+[ted-erl-cached]:		https://web.archive.org/web/20170107022914/http://www.tedunangst.com/flak/post/OpenBSD-on-ERL/
+[collin-erl-cached]:	https://web.archive.org/web/20161022145524/http://www.daemonology.net/blog/2016-01-10-FreeBSD-EdgeRouter-Lite.html
+[rtfm-erl-cached]:		https://web.archive.org/web/20160822180531/http://rtfm.net/FreeBSD/ERL/
+[gentoo-erl-cached]:	https://web.archive.org/web/20151003175724/https://wiki.gentoo.org/wiki/MIPS/ERLite-3

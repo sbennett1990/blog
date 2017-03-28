@@ -14,6 +14,9 @@ operating systems, certainly enough to get you going.
  * http://www.daemonology.net/blog/2016-01-10-FreeBSD-EdgeRouter-Lite.html ([cached][collin-erl-cached])
  * http://rtfm.net/FreeBSD/ERL/ ([cached][rtfm-erl-cached])
  * https://wiki.gentoo.org/wiki/MIPS/ERLite-3 ([cached][gentoo-erl-cached])
+ * http://ftp.openbsd.org/pub/OpenBSD/snapshots/octeon/INSTALL.octeon
+*or when OpenBSD 6.1 is released*
+ * http://ftp.openbsd.org/pub/OpenBSD/6.1/octeon/INSTALL.octeon
 
 #### Required
 
@@ -45,6 +48,20 @@ On OpenBSD, the command would be (as root):
 
 ```
 # cu -l /dev/cuaU0 -s 115200
+```
+
+...
+*after rebooting, after installation*
+15. (?) Set up the proper boot command
+
+As before, while the ERL is booting, hit enter a few times to halt the boot process. 
+You'll need to set some "environment" variables so that the ERL boots correctly each
+time.
+
+```
+# setenv bootcmd 'usb reset; fatload usb 0 $loadaddr bsd; bootoctlinux rootdev=sd0 coremask=0x3'
+# setenv bootdelay 5
+# saveenv
 ```
 
 ## Upgrading OpenBSD on ERL

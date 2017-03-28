@@ -15,7 +15,7 @@ operating systems, certainly enough to get you going.
  * http://rtfm.net/FreeBSD/ERL/ ([cached][rtfm-erl-cached])
  * https://wiki.gentoo.org/wiki/MIPS/ERLite-3 ([cached][gentoo-erl-cached])
  * http://ftp.openbsd.org/pub/OpenBSD/snapshots/octeon/INSTALL.octeon
-*or when OpenBSD 6.1 is released*
+*or when OpenBSD 6.1 is released*  
  * http://ftp.openbsd.org/pub/OpenBSD/6.1/octeon/INSTALL.octeon
 
 #### Required
@@ -50,8 +50,8 @@ On OpenBSD, the command would be (as root):
 # cu -l /dev/cuaU0 -s 115200
 ```
 
-...
-*after rebooting, after installation*
+...  
+*after rebooting, after installation*  
 15. (?) Set up the proper boot command
 
 As before, while the ERL is booting, hit enter a few times to halt the boot process. 

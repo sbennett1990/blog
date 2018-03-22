@@ -2,8 +2,9 @@
 
 ## Resources
 
+* https://bebrainfit.com/curcumin-supplements/
 * https://nootriment.com/curcumin-foods/
-* https://www.organicfacts.net/health-benefits/herbs-and-spices/turmeric-ginger-tea.html?utm_source=internal&utm_medium=link&utm_campaign=also-see
+* https://www.organicfacts.net/health-benefits/herbs-and-spices/turmeric-ginger-tea.html
 
 ## Tea Recipe
 

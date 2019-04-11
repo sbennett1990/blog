@@ -8,9 +8,8 @@ html {
 body {
 	background: #fffff8;
 	color: #5c5c5c;
-	max-width: 50rem;
-	margin-left: auto;
-	margin-top: 0;
+	max-width: 40em;
+	margin: 2em auto;
 	padding: 10px;
 	padding-top: 0;
 }

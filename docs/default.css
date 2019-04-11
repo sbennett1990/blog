@@ -13,3 +13,11 @@ body {
 	padding: 10px;
 	padding-top: 0;
 }
+
+.copyright {
+	color: #aaa;
+	font-size: 10.5pt;
+	text-align: center;
+	margin-top: 3em;
+	margin-bottom: 2em;
+}

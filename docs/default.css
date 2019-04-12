@@ -1,6 +1,5 @@
 html {
 	overflow: -moz-scrollbars-vertical !important;
-	font-size: 120%;
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%;
 }
@@ -8,6 +7,9 @@ html {
 body {
 	background: #fffff8;
 	color: #5c5c5c;
+	font-family: Georgia, Garamond, Times, serif;
+	font-size: 1.1em;
+	line-height: 1.4;
 	max-width: 40em;
 	margin: 2em auto;
 	padding: 10px;

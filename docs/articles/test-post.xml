@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<article data-sblg-article="1">
+<h1>First Post</h1>
+
+<p>
+Finally, the main meat of the blog.
+</p>
+
+<p>
+This is a test of my very first post.
+</p>
+
+<section class="hide">
+	<address>Scott Bennett</address>
+	<time datetime="2019-04-10">10 Apr 2019</time>
+	<aside data-sblg-set-keywords="my, set, of, words">
+	This is my attempt at testing sblg.
+	</aside>
+</section>
+</article>

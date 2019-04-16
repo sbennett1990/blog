@@ -3,7 +3,7 @@
 SRC = articles
 OUT = post
 
-ARTICLES != ls articles/*.xml
+ARTICLES != ls $(SRC)/*.xml
 POSTS     = $(ARTICLES:S/.xml$/.html/g)
 
 all: $(POSTS)

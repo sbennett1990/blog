@@ -16,6 +16,14 @@ body {
 	padding-top: 0;
 }
 
+code {
+	font-family: 'Courier New', Courier, monospace;
+}
+
+.page-header {
+	text-align: center;
+}
+
 .copyright {
 	color: #aaa;
 	font-size: 10.5pt;
@@ -27,4 +35,3 @@ body {
 .hide {
 	display: none;
 }
-

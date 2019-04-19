@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+	<meta name="copyright" content="This document copyright 2019 Scott Bennett." />
+	<title>Yesterday's Commits</title>
+	<!-- This is a workaround for the CSS situation -->
+	<link rel="stylesheet" href="../default.css">
+</head>
+<body>
+	<nav class="page-header">
+		<h2>Scott Bennett</h2>
+		<a href="../index.html">Home</a> &Proportion; <a href="../about.html">About</a>
+	</nav>
+
+	<h3>Apr. 19, 2009</h3>
+	<p>
+		Today in OpenBSD <a href="https://marc.info/?l=openbsd-cvs&m=124022497315752&w=2">commit history</a>,
+		machines with multiple cpus started defaulting to <code>bsd.mp</code>.
+	</p>
+	<blockquote cite="https://marc.info/?l=openbsd-cvs&m=124022497315752&w=2">
+	<pre>
+CVSROOT:	/cvs
+Module name:	src
+Changes by:	deraadt@cvs.openbsd.org	2009/04/19 11:56:03
+
+Modified files:
+	distrib/miniroot: install.sh install.sub 
+	distrib/special/sysctl: sysctl.c 
+
+Log message:
+If hw.ncpufound > 1, have the install script automatically prefer to use
+bsd.mp instead of bsd (using -- mv bsd bsd.sp; mv bsd.mp bsd). anyone
+who brings up boot.conf is an i386 bigot.
+tested on almost all platforms that can do this, ok various people
+	</pre>
+	</blockquote>
+
+	<footer class="copyright">
+		Copyright &copy; 2019 Scott Bennett. All rights reserved.
+	</footer>
+</body>
+</html>

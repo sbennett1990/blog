@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<article data-sblg-article="1">
+<h3>Apr. 25, 2016</h3>
+
+<p>
+	Today in OpenBSD
+	<a href="https://marc.info/?l=openbsd-cvs{{amp}}m=146161167911029{{amp}}w=2">commit</a>
+	<a href="https://marc.info/?l=openbsd-cvs{{amp}}m=146161458911993{{amp}}w=2">history</a>,
+	<code>systrace</code> was detonated to make room for <code>pledge(2)</code>.
+</p>
+
+<blockquote cite="https://marc.info/?l=openbsd-cvs{{amp}}m=146161167911029{{amp}}w=2">
+<pre>
+CVSROOT:	/cvs
+Module name:	src
+Changes by:	tedu@cvs.openbsd.org	2016/04/25 13:09:25
+
+Removed files:
+	bin/systrace   : Makefile alias.c cradle.c filter.c filter.h 
+	                 intercept-translate.c intercept.c intercept.h 
+	                 lex.l openbsd-syscalls.c parse.y policy.c 
+	                 register.c systrace-errno.h systrace-error.c 
+	                 systrace-translate.c systrace.1 systrace.c 
+	                 systrace.h util.c util.h 
+
+Log message:
+boom goes the dynamite
+</pre>
+</blockquote>
+
+<blockquote cite="https://marc.info/?l=openbsd-cvs{{amp}}m=146161458911993{{amp}}w=2">
+<pre>
+CVSROOT:	/cvs
+Module name:	src
+Changes by:	tedu@cvs.openbsd.org	2016/04/25 14:00:33
+
+Modified files:
+	sys/kern       : exec_script.c kern_exec.c kern_exit.c 
+	                 kern_fork.c kern_sysctl.c vfs_lookup.c 
+	sys/sys        : syscall_mi.h 
+Removed files:
+	sys/dev        : systrace.c systrace.h 
+
+Log message:
+boom goes the dynamite
+</pre>
+</blockquote>
+
+<section class="hide">
+	<address>Scott Bennett</address>
+	<time datetime="2019-04-25">25 Apr 2019</time>
+	<aside data-sblg-set-keywords="OpenBSD, commit, cvs, systrace">
+	</aside>
+</section>
+</article>

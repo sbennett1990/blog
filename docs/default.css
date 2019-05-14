@@ -16,8 +16,17 @@ body {
 	padding-top: 0;
 }
 
+pre {
+	font-family: 'Courier New', Courier, monospace;
+}
+
 code {
 	font-family: 'Courier New', Courier, monospace;
+}
+
+.code {
+	font-family: 'Courier New', Courier, monospace;
+	font-style: oblique;
 }
 
 .page-header {

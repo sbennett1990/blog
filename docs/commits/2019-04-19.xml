@@ -4,7 +4,7 @@
 
 <p>
 	Today in OpenBSD <a href="https://marc.info/?l=openbsd-cvs&amp;m=124022497315752&amp;w=2">commit history</a>,
-	machines with multiple cpus started defaulting to <code>bsd.mp</code>.
+	machines with multiple cpus started defaulting to <i class="code">bsd.mp</i>.
 </p>
 
 <blockquote cite="https://marc.info/?l=openbsd-cvs&amp;m=124022497315752&amp;w=2">

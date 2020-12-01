@@ -1,0 +1,5 @@
+# Simple usage: knit template + article together into output file
+sblg -c -o out.html -t article-template.html 2019-04-10-test-post.xml
+
+# Regenerate index page with new blog links
+sblg -o index.html -t templates/index-template.html articles/*

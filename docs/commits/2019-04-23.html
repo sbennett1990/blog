@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+	<meta name="copyright" content="This document copyright 2019 Scott Bennett." />
+	<meta name="author" content="Scott Bennett" />
+	<meta name="keywords" content="OpenBSD, commit, cvs, useradd" />
+	<title>Yesterday's Commits</title>
+	<base href="../" />
+	<link rel="stylesheet" href="default.css" />
+</head>
+
+<body>
+
+<nav class="page-header">
+<h2>Scott Bennett</h2>
+<a href="index.html">Home</a>
+{{amp}}Proportion;
+<a href="commits/index.html">Commits</a>
+{{amp}}Proportion;
+<a href="about.html">About</a>
+</nav>
+
+<article data-sblg-article="1">
+<h3>Apr. 23, 2009</h3>
+
+<p>
+	Today in OpenBSD <a href="https://marc.info/?l=openbsd-cvs{{amp}}m=124051147713472{{amp}}w=2">commit history</a>,
+	the installer began prompting for the creation of an initial user (other than root).
+</p>
+
+<blockquote cite="https://marc.info/?l=openbsd-cvs{{amp}}m=124051147713472{{amp}}w=2">
+<pre>
+CVSROOT:	/cvs
+Module name:	src
+Changes by:	deraadt@cvs.openbsd.org	2009/04/23 12:26:14
+
+Modified files:
+	distrib/miniroot: install.sh install.sub 
+
+Log message:
+Near the end of the installation, prompt for the setup of an initial
+user, who will also be placed in wheel.  The setup of that user is
+expected to be mostly compatible with what useradd(8) would have done.
+krw will probably improve the ksh code in here after this :)
+</pre>
+</blockquote>
+
+<section class="hide">
+	<address>Scott Bennett</address>
+	<time datetime="2019-04-23">23 Apr 2019</time>
+	<aside data-sblg-set-keywords="OpenBSD, commit, cvs, useradd">
+	</aside>
+</section>
+</article>
+
+<footer class="copyright">
+Copyright {{amp}}copy; 2019 Scott Bennett. All rights reserved.
+</footer>
+</body>
+</html>
+

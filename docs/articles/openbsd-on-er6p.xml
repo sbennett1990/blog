@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<article data-sblg-article="1">
+<h1>OpenBSD on the Edge Router 6p</h1>
+
+<p>
+You'll need a few things:
+- bsd.rd
+- a tftpd server
+- a dhcp server
+- a proper serial cable
+</p>
+
+<p>
+I opted to increase the amount of storage from 4GB to 36GB. The base disk space seemed
+a little tight for my comfort, and the er6p conveniently has a front USB slot that can
+readily house a USB drive. There are two important things to note if you choose to
+use the front USB slot for storage:
+1) the kernel will flip sd0 and sd1. Without a USB drive inserted, the onboard MMC
+   storage would appear as sd0. After plugging in a flash drive and rebooting, the
+   MMC is now sd1 and the drive is sd0.
+2) you will need to prepend the following command to the `bootargs' variable in U-boot:
+	'usb start;'
+   so the whole startup invocation could look like this:
+	'usb start; fatload... '
+   Otherwise the machine can't boot because the USB subsystem isn't initialized.
+
+That last step <em>may</em> not be necessary if you make the MMC disk the root disk. In
+hindsight, I wish I had put the root partition on the MMC and an altroot on the
+USB drive.
+</p>
+
+<section class="hide">
+	<address>Scott Bennett</address>
+	<time datetime="2020-12-01">01 Dec 2020</time>
+	<aside data-sblg-set-keywords="my, set, of, words">
+	This is my attempt at testing sblg.
+	</aside>
+</section>
+</article>

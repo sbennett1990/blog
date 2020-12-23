@@ -3,15 +3,39 @@
 <h1>OpenBSD on the Edge Router 6p</h1>
 
 <p>
-You'll need a few things:
-- bsd.rd
-- a tftpd server
-- a dhcp server
-- a proper serial cable
+Some time ago, I started seeing people installing OpenBSD on the EdgeRouter Lite
+(erl). It seemed like an interesting little box that could be easy enough to
+stand up as my home gateway, so I gave it a go. Since then, the octeon architecture
+has matured quite a bit and my networking needs have grown a bit bigger, therefore
+it was time for an upgrade.
 </p>
 
 <p>
-I opted to increase the amount of storage from 4GB to 36GB. The base disk space seemed
+To my delight, I found that the EdgeRouter 6p was supported by OpenBSD and it
+had the amount of NICs that I was looking for. It comes with four whole cores,
+1GB of RAM, and a front USB slot which will be important later. Sadly though,
+it only ships with 4GB of internal storage, which I believe is essentially
+soldered on. Installing OpenBSD is not too difficult if you read
+<a href="http://ftp4.usa.openbsd.org/pub/OpenBSD/snapshots/octeon/INSTALL.octeon">
+INSTALL.octeon</a>,
+but there are a few quirks you'll encounter that aren't spelled out.
+</p>
+
+<p>
+Before beginning the installation, you'll need a few things:
+</p>
+
+<ul>
+<li>bsd.rd</li>
+<li>a <a href="https://man.openbsd.org/tftpd.8">tftpd(8)</a> server</li>
+<li>a dhcp server</li>
+<li>a "Cisco" serial cable (like this one...)</li>
+<li>and possibly a serial-to-usb cable (like this one...)</li>
+</ul>
+
+<p>
+I opted to increase the amount of available disk space from 4GB to 36GB. The stock
+disk space is
 a little tight for my comfort, and the er6p conveniently has a front USB slot that can
 readily house a USB drive. There are two important things to note if you choose to
 use the front USB slot for storage:
@@ -28,6 +52,31 @@ That last step <em>may</em> not be necessary if you make the MMC disk the root d
 hindsight, I wish I had put the root partition on the MMC and an altroot on the
 USB drive.
 </p>
+
+<p>
+First thing to do is set up a dhcp server and
+<a href="https://man.openbsd.org/tftpd.8">tftpd(8)</a> server.
+This will allow booting bsd.rd over the network. Next you'll need to connect to
+the er6p over the serial port. The command on OpenBSD would be something like this:
+
+<code>
+$ doas cu -l /dev/cuaU0 -s 115200
+</code>
+
+Once you've connected via serial, it's time to plug in the power cord to actually
+turn on the machine. Hit <kbd>Enter</kbd> a few times in order to pause the u-boot
+menu.
+</p>
+
+<p>
+Here you'll need to enter some u-boot commands to get things going:
+</p>
+
+<ol>
+<li><code>dhcp</code>: to get an IP address</li>
+<li><code>tftpboot 0 bsd.rd</code>: to load bsd.rd over the network</li>
+<li><code>bootoctlinux</code>: </li>
+</ol>
 
 <section class="hide">
 	<address>Scott Bennett</address>
